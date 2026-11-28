@@ -1,0 +1,5 @@
+# How We Found It
+
+> *Status: contributor text, unverified (independent verification lives in `verify-it-yourself/` and `panel/`).*
+
+Unseen-subclass (Hard) and unseen-enzyme (Medium) retrieval fails pure reaction-similarity embeddings because zero training reactions share the test EC3 or EC4 class. We paired deterministic RDKit atom/bond/cofactor conservation stoichiometry (`conservation_v4.py`, `rules_v2.py`, `metabolite_matcher.py`) matched against IUBMB definitions in `text2EC.csv` (`Sr_v4` rules alone achieve `29.3%` Hard L3 and `69.8%` Hard L1 with `0` ML), inverse-multiplicity weighting (`w = 1 / count(Reaction)`) across promiscuous reactions, 3-seed local multi-view alignment (`engine_v5.py`), and strictly non-positive intra-EC3 `L4` refinement (`nonpos_within_ec3`). All model choices and OOD thresholds were calibrated on train-only cross-validation splits; `engine_v5_auto_regime.py` removes split-name branching inside `run_auto_regime()` using train-catalog coverage alone and was verified once blind on CARE Task 2 `Easy` (`74.0%` L4, `0` GPU).

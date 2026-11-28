@@ -1,0 +1,5 @@
+target_id,cell,value,table_value,table_fetched_utc,file,sha256
+care-enzyme-reaction-retrieval-hard,"Task 2 Hard k=1 L3 (p1)",32.0,9.8,2026-11-28T00:09:00Z,object/v5_hard_top50.csv.gz,45ac3d902f0d36306c72e523bbb07eb3690cf368b39ffc22caf77746bc8ced88
+care-enzyme-reaction-retrieval-hard,"Task 2 Hard k=1 L4",10.0,1.3,2026-11-28T00:09:00Z,object/v5_hard_top50.csv.gz,45ac3d902f0d36306c72e523bbb07eb3690cf368b39ffc22caf77746bc8ced88
+care-enzyme-reaction-retrieval-hard,"Task 2 Medium k=1 L4 (p2)",11.5,7.4,2026-11-28T00:09:00Z,object/v5_medium_top50.csv.gz,45bd58a6f2f750303c9174820c5a11c9cc9810cc0ceaeb7d326cd21889d01aed
+care-enzyme-reaction-retrieval-hard,"Task 2 Easy k=1 L4 (0-GPU blind extension)",74.0,60.3,2026-11-28T00:09:00Z,object/v5_auto_easy_top50.csv.gz,1de74e1525ca62cbc549174585079acd26e8f8b5f9b192c88cefb9e6d1619494
